@@ -10,11 +10,12 @@ export const Header = (props) => {
 
 // export default Header;
 
-export const Header2 = ({title, description, keywords}) => {
+export const Header2 = ({title, description, keywords,children}) => {
     return <Head>
     <title>{title}</title>
     <meta name="description" content={description} />
     <meta name="keywords" content={keywords} />
+    {children}
     </Head>
 }
 
